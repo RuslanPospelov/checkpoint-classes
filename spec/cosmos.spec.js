@@ -49,6 +49,7 @@ describe('Система запуска космических ракет', () =
     });
     it('позволяет отсоединить ступень', () => {
       const rocket = new CarrierRocket(stages);
+      // Первая ступень находится внизу ракеты и отсоединяется первой
       rocket.detachStage();
       expect(rocket.stages).toEqual(stages.slice(1));
     });
