@@ -26,6 +26,7 @@ describe('Система запуска космических ракет', () =
       const rocketPropellant = 'полиуретан';
       const engine = new SolidPropellantRocketEngine('Наро-1', specificImpulse, rocketPropellant);
       expect(engine.specificImpulse).toBe(specificImpulse);
+      
       expect(engine.rocketPropellant).toBe(rocketPropellant);
     });
     it('наследуется от Ракетного двигателя', () => {
